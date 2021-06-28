@@ -1,4 +1,4 @@
-# TIL
+# 2021-06-28
 
 # 1. fread() and fwrite()
 fread(void* ptr, size_t 크기, size_t 개수, FILE* fp): fp에서 count개의 원소를 가지는 배열을 가져와서 ptr이 가리키는 배열에 넣는데 각 원소의 크기는 size 바이트로 설정해 줄 수 있다.
@@ -6,7 +6,9 @@ fwrite(const void* ptr, size_t 크기, size_t 개수, FILE* fp): fp에 개수만
 
 # 2. 디렉토리 관련 함수
 DIR* : 디렉토리를 나타내는 구분자로 디렉토리를 사용하기 전 DIR * dp; 와 같이 선언해줘야함
+
 opendir(): 디렉토리를 열어주는 함수로, 열고자하는 디렉토리 경로를 입력으로 받고 DIR 구조체에 대한 포인터를 반환함. 만약 여는 것을 실패할시 NULL을 반환 <-> closedir(): 디렉토리 닫음
+
 readdir(): 디렉토리 포인터가 가리키는 곳에 디렉토리 엔트리에 대한 포인터를 반환, 내용이 더 없으면 NULL을 리턴
 
 <dirent.h 구조체 속 정보>
